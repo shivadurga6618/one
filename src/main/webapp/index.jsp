@@ -56,7 +56,7 @@
                 <ul>
                     <li><a href="#mobile">Mobiles</a></li> <!-- Bug: Incorrect anchor ID (should be #mobiles) -->
                     <li><a href="#laptps">Laptops</a></li> <!-- Bug: Typo in href (#laptps instead of #laptops) -->
-                    <li><a href="#clothes">Clothes</a></li>
+                    <li><a href="#shirts">Clothes</a></li>
                 </ul>
             </div>
             <div class="footer-section">

@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="#mobiles">Mobiles</a>
                 <li><a href="#laptops">Laptops</a></li>
-                <li><a href="#clothes">Clothes</a></li>
+                <li><a href="#shirts">Clothes</a></li>
                 <li><a href="#cart"><em class="fas fa-shopping-cart"></em> Cart <span id="cart-count">0</span></a></li>
             </ul>
         </nav>

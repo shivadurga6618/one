@@ -14,9 +14,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#mobiles">Mobiles</a>
-                <li><a href="#laptops">Laptops</a></li>
-                <li><a href="#shirts">Clothes</a></li>
+                <li><a href="#oppo reno 10">Mobiles</a>
+                <li><a href="#durga">Laptops</a></li>
+                <li><a href="#shiva">Clothes</a></li>
                 <li><a href="#cart"><em class="fas fa-shopping-cart"></em> Cart <span id="cart-count">0</span></a></li>
             </ul>
         </nav>
@@ -56,7 +56,7 @@
                 <ul>
                     <li><a href="#mobile">Mobiles</a></li> <!-- Bug: Incorrect anchor ID (should be #mobiles) -->
                     <li><a href="#laptps">Laptops</a></li> <!-- Bug: Typo in href (#laptps instead of #laptops) -->
-                    <li><a href="#shirts">Clothes</a></li>
+                    <li><a href="#shiva">Clothes</a></li>
                 </ul>
             </div>
             <div class="footer-section">

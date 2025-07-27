@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html> <!-- Bug: Missing DOCTYPE declaration type -->
 <html lang="en">
 <head>

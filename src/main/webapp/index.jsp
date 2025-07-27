@@ -16,6 +16,10 @@
             <ul>
                 <li><a href="#oppo reno 10">Mobiles</a>
                 <li><a href="#durga">Laptops</a></li>
+                                <li><a href="#durga">Laptops</a></li>
+
+
+
 
                 <li><a href="#shiva">Clothes</a></li>
                 <li><a href="#cart"><em class="fas fa-shopping-cart"></em> Cart <span id="cart-count">0</span></a></li>

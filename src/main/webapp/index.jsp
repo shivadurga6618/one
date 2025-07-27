@@ -17,7 +17,7 @@
                 <li><a href="#oppo reno 10">Mobiles</a>
                 <li><a href="#durga">Laptops</a></li>
                                 <li><a href="#durga">Laptops</a></li>
-
+                <li><a href="#durga">Laptops</a></li>
 
 
 

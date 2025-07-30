@@ -71,8 +71,8 @@
 
   <section class="features">
     <div class="feature">
-      <h3>Responsive Design</h3>
-      <p>Looks great on all devices — mobile, tablet, and desktop.</p>
+      <h3>I LOVE YOU BABY </h3>
+      <p>UMMAHHHHHHHHHHHHHHHHHH </p>
     </div>
     <div class="feature">
       <h3>Clean Layout</h3>

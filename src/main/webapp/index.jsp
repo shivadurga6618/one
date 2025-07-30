@@ -71,8 +71,8 @@
 
   <section class="features">
     <div class="feature">
-      <h3> SIRISHA I LOVE YOU BABY </h3>
-      <p>UMMAHHHHHHHHHHHHHHHHHH </p>
+      <h3> BEST FRIENDS </h3>
+      <p>HODOPHILE AND SHIVA  </p>
     </div>
     <div class="feature">
       <h3>Clean Layout</h3>

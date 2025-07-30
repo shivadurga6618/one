@@ -71,8 +71,8 @@
 
   <section class="features">
     <div class="feature">
-      <h3> BEST FRIENDS </h3>
-      <p>HODOPHILE AND SHIVA  </p>
+      <h3> ERRIPUKA </h3>
+      <p> GOA APPUDU VASTAVU  </p>
     </div>
     <div class="feature">
       <h3>Clean Layout</h3>

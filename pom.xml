@@ -15,12 +15,16 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <docker.image.prefix>kammana</docker.image.prefix>
-        <sonar.host.url>http://18.181.164.81:9000/</sonar.host.url>
+
+        <!-- SonarQube properties -->
+        <sonar.host.url>http://18.181.164.81:9000</sonar.host.url>
+        <sonar.login>your-sonar-token</sonar.login>
+        <sonar.projectKey>in.javahome:myweb</sonar.projectKey>
+        <sonar.projectName>Java Home myweb</sonar.projectName>
+        <sonar.projectVersion>8.7.3</sonar.projectVersion>
     </properties>
 
     <dependencies>
-        <!-- JUnit for tests -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -61,10 +65,16 @@
                     <retryFailedDeploymentCount>3</retryFailedDeploymentCount>
                 </configuration>
             </plugin>
+
+            <!-- SonarQube plugin -->
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version>
+            </plugin>
         </plugins>
     </build>
 
-    <!-- Nexus repository configuration -->
     <distributionManagement>
         <snapshotRepository>
             <id>nexus-snapshots</id>

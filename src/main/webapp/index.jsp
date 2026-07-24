@@ -3,27 +3,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello Tomcat JSP</title>
+    <title>My Creative JSP Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #eef2f5;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding-top: 50px;
+            color: #333;
+        }
+        header {
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 20px;
         }
         h1 {
-            color: #2c3e50;
+            font-size: 3em;
+            margin: 0;
         }
         p {
-            color: #555;
+            font-size: 1.2em;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            width: 250px;
+            height: auto;
+        }
+        footer {
+            background-color: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My JSP Page!</h1>
-    <p>This page is deployed on Apache Tomcat.</p>
+    <header>
+        <h1>🌈 Welcome to My Web App!</h1>
+        <p>Deployed on Apache Tomcat</p>
+    </header>
 
-    <!-- Example of JSP expression -->
-    <p>Current server time: <%= new java.util.Date() %></p>
+    <div class="gallery">
+        <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1">
+        <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2">
+        <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3">
+    </div>
+
+    <footer>
+        <p>Current server time: <%= new java.util.Date() %></p>
+    </footer>
 </body>
 </html>

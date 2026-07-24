@@ -3,65 +3,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Creative JSP Page</title>
+    <title>Live Wallpaper Style Page</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+        body, html {
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
             text-align: center;
-            color: #333;
         }
-        header {
-            background-color: rgba(0,0,0,0.6);
-            color: #fff;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 30px;
-        }
-        .gallery img {
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            width: 250px;
-            height: auto;
-        }
-        footer {
-            background-color: rgba(0,0,0,0.6);
-            color: #fff;
-            padding: 15px;
+
+        /* Fullscreen background video */
+        video.bg-video {
             position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Overlay content */
+        .overlay {
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            font-size: 4em;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+        }
+
+        /* Animated gradient bar */
+        .gradient-bar {
+            position: absolute;
             bottom: 0;
             width: 100%;
+            height: 10px;
+            background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+            background-size: 800% 800%;
+            animation: gradientMove 15s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>🌈 Welcome to My Web App!</h1>
-        <p>Deployed on Apache Tomcat</p>
-    </header>
+    <!-- Background video (replace with your own 4K motion video file) -->
+    <video autoplay muted loop class="bg-video">
+        <source src="videos/background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
 
-    <div class="gallery">
-        <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1">
-        <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2">
-        <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3">
+    <div class="overlay">
+        <h1>🌌 Welcome to My Live Page</h1>
+        <p>Deployed on Apache Tomcat</p>
+        <p>Server time: <%= new java.util.Date() %></p>
     </div>
 
-    <footer>
-        <p>Current server time: <%= new java.util.Date() %></p>
-    </footer>
+    <div class="gradient-bar"></div>
 </body>
 </html>
